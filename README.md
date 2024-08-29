@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Easy Invoicer
 
-## Getting Started
+Allows a user to create, modify, and send invoices to an email of their choice<br/><br/>
+Try it out [here!]()
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [x] **Clerk Authentication:** Login with your existing Google account or create a new account on the website itself
+- [x] **Create Invoices:** Create a new invoice by specifying the recipient, invoice title, and monetary details for each invoice item
+- [x] **View Invoice History:** See a list of all previous created invoices with options to send or download them
+- [x] **Customer List:** Manage customers by providing their name, email, and billing address
+- [x] **Bank Information:** Update your bank accounts with account name, account number, bank name, and desired currency (purely informational on each invoice, this application does not directly manage funds nor connect to an online bank account)
+<br/><br/>
+All invoices can be either downloaded locally or sent via email to the desired recipient.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js
+- React
+    - react-email
+    - react-to-print
+- Resend
+- Drizzle
+- Typescript
+- Neon Postgres
+- Clerk
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Acknowledgements
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you to the developers of each of the listed tools/frameworks used to create this project.
